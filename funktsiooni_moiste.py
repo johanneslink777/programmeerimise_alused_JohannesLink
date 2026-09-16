@@ -29,7 +29,7 @@ def ask_name_and_greet_user():
     # code here
     name = input("Enter your name: ")
     name = name.capitalize()
-    if name == "Thanos":
+    if name.lower() == "thanos":
         print("Get out of here, Thanos! Nobody wants to play with you!")
     else:
         print(f"Hi, {name}. Would you like to have a Hamburger?")
@@ -38,13 +38,15 @@ def ask_name_and_greet_user():
 def calculate_hypotenuse_length(a: float, b: float) -> float:
     """Return hypotenuse value."""
     # code here
-    return math.sqrt(a**2 + b**2)
+    c = math.sqrt(a**2 + b**2)
+    return c
 
 
 def calculate_cathetus_length(a: float, c: float) -> float:
     """Return cathetus value."""
     # code here
-    return math.sqrt(c**2 - a**2)
+    b = math.sqrt(c**2 - a**2)
+    return b
 
 
 if __name__ == '__main__':
